@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+	int a,b,c,d;
+	scanf("%d%d%d",&a,&b,&c);
+	while(a||b||c)
+	{
+		d=b-a;
+		//printf("d=%d\n",d);
+		if(c==(b+d))
+		{
+			printf("AP %d\n",(c+d));
+		}
+		else
+		{
+			d=b/a;
+			printf("GP %d\n",(c*d));
+		}
+		scanf("%d%d%d",&a,&b,&c);
+	}
+	return 0;
+}
